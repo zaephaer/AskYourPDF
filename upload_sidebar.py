@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import pandas as pd
 
+# Change DataPath to data (its a name of your folder)
 def save_uploaded_file(uploadedfile):
     with open(os.path.join("DataPath",uploadedfile.name),"wb") as f:
         f.write(uploadedfile.getbuffer())
